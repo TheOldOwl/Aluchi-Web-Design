@@ -1,7 +1,7 @@
 /* ------------------------- Background Image --------------------------- */
 
 .wrapper {
-    background-image: url(../images/bg-home.png);
+    background-image: url(../images/homesmall.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
