@@ -1,7 +1,7 @@
 /* wrapper universal styles in global+navs.css file */
 
 .wrapper {
-    background-image: url(../images/contact.png);
+    background-image: url(../images/contactsmall.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
