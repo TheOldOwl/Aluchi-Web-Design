@@ -1,0 +1,125 @@
+/* wrapper universal styles in global+navs.css file */
+
+.wrapper {
+    background-image: url(../images/contact1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.contact-position {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    width: 80%;
+    margin-top: -70px;
+}
+
+.address {
+    border-radius: 5px;
+    background-color: rgba(37, 37, 37, 0.7);
+    box-shadow: 2px 2px 10px #252525;
+    width: 400px;
+    height: 415px;
+
+    line-height: 4em;
+    letter-spacing: 0.15em;
+    color: #c2c2c2;
+    font-weight: 200;
+    padding: 20px 40px 20px 40px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.address p:nth-child(odd) {
+    text-transform: uppercase;
+}
+
+.contact-container {
+    /* border: 1px solid red; */
+    
+    width: 400px;
+    
+    /* height: 500px; */
+
+    
+
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+}
+
+.contact-container form input, textarea {
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(37, 37, 37, 0.7);
+    box-shadow: 2px 2px 10px #252525;
+    color: #c2c2c2;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+#submit-btn {
+    padding: 20px 10px;
+    background-color: #CF4647;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.contact-container form input::placeholder, textarea::placeholder {
+    color: rgba(194, 194, 194, 0.6);
+}
+
+@media screen and (max-width:650px) {
+
+    .main-container {
+        margin-top: 10px;
+        overflow: auto;
+        position: relative;
+    }
+
+    .contact-position {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 850px;
+        position: absolute;
+        top: 0;
+        overflow: auto;
+    }
+
+    .address, .contact-container {
+        width: 80%;
+    }
+
+    .address {
+        font-size: 0.8em;
+        margin-right: 0;
+        height: 250px;
+        
+    }
+
+    .contact-container {
+        order: -1;
+        /* margin-bottom: 30px; */
+    }
+    
+}
+
