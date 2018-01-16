@@ -24,7 +24,4 @@ $(document).ready(function() {
             $('#logo').css({'opacity': '0.1'});
     })
 
-    // $('.email').on('mouseover', function() {
-    //     $('.logo').addClass('logo-on');
-    // })
 });
